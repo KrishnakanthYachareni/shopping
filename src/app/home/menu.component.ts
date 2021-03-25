@@ -8,7 +8,7 @@ import {AuthService} from '../user/auth.service';
   templateUrl: './menu.component.html'
 })
 export class MenuComponent implements OnInit {
-  pageTitle = 'Product Management';
+  pageTitle = 'Acme Product Management';
 
   get isLoggedIn(): boolean {
     return this.authService.isLoggedIn();
@@ -25,7 +25,6 @@ export class MenuComponent implements OnInit {
               private authService: AuthService) {
   }
 
-  // tslint:disable-next-line:typedef
   ngOnInit() {
   }
 
